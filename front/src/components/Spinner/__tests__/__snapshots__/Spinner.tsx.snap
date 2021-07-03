@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner component should be render 1`] = `
+<span
+  className="spinner spinner_primary"
+  style={
+    Object {
+      "borderWidth": 2,
+      "height": "1em",
+      "width": "1em",
+    }
+  }
+/>
+`;
+
+exports[`Spinner component should be set size 1`] = `
+<span
+  className="spinner spinner_primary"
+  style={
+    Object {
+      "borderWidth": 2,
+      "height": "50px",
+      "width": "50px",
+    }
+  }
+/>
+`;

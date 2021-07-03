@@ -1,0 +1,32 @@
+.spinner {
+    display: inline-block;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: transparent;
+    animation-name: spinner-rotate;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    &_primary {
+        border-top-color: var(--spinner-primary);
+        border-bottom-color: var(--spinner-primary);
+    }
+
+    &_secondary {
+        border-top-color: var(--spinner-secondary);
+        border-bottom-color: var(--spinner-secondary);
+    }
+}
+
+@keyframes spinner-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

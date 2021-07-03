@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 60px;
+    background-color: var(--header-bg);
+    color: var(--header-text);
+
+    a {
+        &:link,
+        &:visited,
+        &:hover,
+        &:focus,
+        &:active {
+            color: inherit;
+        }
+    }
+
+    &__title {
+        outline: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.8em;
+        text-decoration: none;
+    }
+}

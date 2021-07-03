@@ -1,0 +1,30 @@
+.auth-form {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__field {
+        margin-top: 32px;
+    }
+
+    &__error {
+        margin-top: 32px;
+        color: var(--error);
+    }
+
+    &__buttons {
+        display: flex;
+        margin-top: 32px;
+
+        > * {
+            flex: 1 1 10px;
+        }
+
+        > * + * {
+            margin-left: 16px;
+        }
+    }
+}

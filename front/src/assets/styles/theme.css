@@ -1,0 +1,55 @@
+@import "colors.css";
+
+:root {
+    --body-bg: var(--color-e0);
+    --main-text: var(--color-1f);
+    --block-bg: var(--color-white);
+    --block-text: var(--color-1f);
+    --inactive: var(--color-c2);
+    --error: var(--color-red);
+    --shadow: var(--color-2c-transparent);
+
+    /* Header */
+    --header-bg: var(--color-2c);
+    --header-text: var(--color-e0);
+
+    /* MainMenu */
+    --main-menu-bg: var(--color-2c);
+    --main-menu-text: var(--color-e0);
+    --main-menu-active-bg: var(--color-4c);
+    --main-menu-active-text: var(--color-e0);
+
+    /* Spinner */
+    --spinner-primary: var(--color-1f);
+    --spinner-secondary: var(--color-e0);
+
+    /* Button default */
+    --button-default-bg: transparent;
+    --button-default-text: var(--color-4c);
+    --button-default-disabled-bg: transparent;
+    --button-default-disabled-text: var(--inactive);
+    --button-default-active-bg: transparent;
+    --button-default-active-text: var(--color-1f);
+
+    /* Button primary */
+    --button-primary-bg: var(--color-4c);
+    --button-primary-text: var(--color-white);
+    --button-primary-disabled-bg: var(--inactive);
+    --button-primary-disabled-text: var(--color-white);
+    --button-primary-active-bg: var(--color-1f);
+    --button-primary-active-text: var(--color-white);
+
+    /* Button secondary */
+    --button-secondary-bg: transparent;
+    --button-secondary-text: var(--color-4c);
+    --button-secondary-disabled-bg: transparent;
+    --button-secondary-disabled-text: var(--inactive);
+    --button-secondary-active-bg: transparent;
+    --button-secondary-active-text: var(--color-1f);
+
+
+    /* Button link */
+    --button-link-text: var(--color-4c);
+    --button-link-disabled-text: var(--inactive);
+    --button-link-active-text: var(--color-1f);
+}

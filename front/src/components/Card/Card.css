@@ -1,0 +1,23 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 16px 32px;
+    background-color: var(--block-bg);
+    color: var(--block-text);
+    border-radius: 8px;
+    box-shadow: 4px 4px 16px var(--shadow);
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        margin-top: 16px;
+    }
+}

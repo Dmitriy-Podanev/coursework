@@ -1,0 +1,9 @@
+.registration-page {
+    &__form {
+        padding: 40px;
+        width: 400px;
+        background-color: var(--block-bg);
+        border-radius: 8px;
+        box-shadow: 4px 4px 16px var(--shadow);
+    }
+}

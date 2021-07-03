@@ -1,0 +1,7 @@
+{
+  "port": 5000,
+  "logLevel": "info",
+  "accessTokenExp": 30000000,
+  "refreshTokenExp": 3600000
+}
+

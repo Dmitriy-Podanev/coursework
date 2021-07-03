@@ -1,0 +1,100 @@
+.button {
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-style: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &[disabled] {
+        cursor: no-drop;
+    }
+
+    &_default {
+        color: var(--button-default-text);
+        background-color: var(--button-default-bg);
+        transition: color 0.2s, background-color 0.2s;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--button-default-active-text);
+            background-color: var(--button-default-active-bg);
+        }
+
+        &[disabled] {
+            color: var(--button-default-disabled-text);
+            background-color: var(--button-default-disabled-bg);
+        }
+    }
+
+    &_primary {
+        padding: 0 16px;
+        color: var(--button-primary-text);
+        border: var(--button-primary-bg) solid 2px;
+        background-color: var(--button-primary-bg);
+        transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--button-primary-active-text);
+            border-color: var(--button-primary-active-bg);
+            background-color: var(--button-primary-active-bg);
+        }
+
+        &[disabled] {
+            color: var(--button-primary-disabled-text);
+            border-color: var(--button-primary-disabled-bg);
+            background-color: var(--button-primary-disabled-bg);
+        }
+    }
+
+    &_secondary {
+        padding: 0 16px;
+        color: var(--button-secondary-text);
+        border: var(--button-secondary-text) solid 2px;
+        background-color: var(--button-secondary-bg);
+        transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--button-secondary-active-text);
+            border-color: var(--button-secondary-active-text);
+            background-color: var(--button-secondary-active-bg);
+        }
+
+        &[disabled] {
+            color: var(--button-secondary-disabled-text);
+            border-color: var(--button-secondary-disabled-text);
+            background-color: var(--button-secondary-disabled-bg);
+        }
+    }
+
+    &_link {
+        color: var(--button-link-text);
+        text-decoration: underline;
+        transition: color 0.2s;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--button-link-active-text);
+        }
+
+        &[disabled] {
+            color: var(--button-link-disabled-text);
+        }
+    }
+
+    &__spinner + &__children {
+        margin-left: 12px;
+    }
+}
